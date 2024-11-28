@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(243, 235, 235);
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+}
+.return{
+   padding-top: 25px;
+    background-color: rgb(235, 235, 173);
+    height: 300px;
+    width: 1250px;
+    display:flex;
+    justify-content:space-evenly;
+  
+   
+}
+.logo1 {
+    
+    margin-top: 0%;
+    margin-left: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+   
+}
+
+.return1{
+   
+    background-color: rgb(235, 235, 173);
+    height: 300px;
+    width: 1250px;
+    display:flex;
+    justify-content:space-evenly;
+   }
+
+h1{
+    display:flex;
+    justify-content:space-between;
+    height: 70px;
+    background-color: rgb(145, 108, 179);
+    color: rgb(234, 234, 245);
+    padding-left: 20px;
+}
+
+
+hr{
+ height: 0px;
+ border: 2px solid rgb(239, 24, 24);
+}
+
+
+footer{
+    color: white;
+    background-color: rgb(3, 33, 47);
+    height: 50px;
+    text-align: center;
+   }
+
+   a{
+
+    color: black;
+    font-size: larger;
+    display: block;
+   }
+   
+   .box{
+    height: 260px;
+    border: 2px solid black;
+    width: 17%;
+    background-color: aquamarine;
+    padding: 20px 0px 15px;
+    padding-left: 40px;
+  
+
+
+   }
+.foot{
+
+    height: 330px; 
+    width:1300px;
+    background-color:#1a3f3f;
+     display: flex;
+
+}
+
+
+
+   @media screen and (max-width:600px){
+    h1{
+        padding-left: 20px;
+        height: 100px;
+        font-size:25px;
+        background-color: rgb(145, 108, 179);
+        color: rgb(234, 234, 245);
+       
+    }
+    .return{
+        padding-top: 50px;
+         background-color: rgb(235, 235, 173);
+         height: 1300px;
+         width: 100%;
+        display:inline-block;
+         justify-content:space-evenly;
+        
+        
+     }
+     .return1{
+   
+        background-color: rgb(235, 235, 173);
+        height: 1300px;
+        width: 100%;
+        display:inline-block;
+        justify-content:space-evenly;
+       
+    
+    }
+     .box{
+        align-items: center;
+        height: 260px;
+        border: 2px solid black;
+        width: 70%;
+        background-color: aquamarine;
+        padding: 20px 0px 15px;
+        padding-left: 60px;
+     }  
+     
+     
+     .foot{
+        margin-top: 2000px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 1100px; 
+        width:100%;
+        background-color:#1a3f3f;
+         display:inline-block;
+         /* display: flexbox; */
+         justify-content: space-evenly;
+     }
+    
+     footer{
+        margin-top: 00px;
+        color: white;
+        background-color: rgb(3, 33, 47);
+        height: 200px;
+        text-align: center;
+        width: 100%;
+       }
+
+
+
+   }
+

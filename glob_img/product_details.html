@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product_details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="cards">
+        <div class="imgs">
+            <img id="1" src="/glob_img/1.jpg" alt="" onclick="clk(this)"> <br>
+            <img id="2" src="/glob_img/2.jpg" alt="" onclick="clk(this)"> <br>
+            <img id="3" src="/glob_img/3.jpg" alt="" onclick="clk(this)"><br>
+            <img id="4" src="/glob_img/4.jpg" alt="" onclick="clk(this)"><br>
+            <img id="5" src="/glob_img/5.jpg" alt="" onclick="clk(this)"><br>
+            <img id="6" src="/glob_img/6.jpg" alt="" onclick="clk(this)"><br>
+        </div>
+
+        <div class="left">
+            <!-- <div class="left" onmousemove="move(event)"> -->
+            <!-- <div class="lens" id="lens"></div> -->
+            <img src="/glob_img/1.jpg" id="imgss" alt="">
+
+            <!-- <img src="/glob_img/1.jpg" id="second" alt=""> -->
+        </div>
+
+
+
+        <div class="right">
+            <h1>OnePlus Nord CE 3 Lite 5G <br> (Pastel Lime, 8GB RAM, 128GB Storage)</h1>
+            <a href=""> Visit the OnePlus Store</a>
+
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <p>5K+ bought in past month</p>
+
+            <hr>
+
+            <h1>₹17,999</h1>
+            <h2 style="color: red;">-10% </h2>
+            <p style="text-decoration:line-through;">M.R.P.: ₹19,999</p>
+            <h4>nclusive of all taxes
+                EMI starts at ₹873. No Cost EMI available EMI options </h4>
+            <hr>
+            <h4>Size: 8GB RAM, 128GB Storage <br>
+                <button> 8GB RAM, 128GB Storage </button><br>
+                <button> 8GB RAM, 256GB Storage</button>
+            </h4>
+            <hr>
+            <h4>
+                Brand - OnePlus <br>
+                Model Name - Nord CE 3 Lite 5G <br>
+                Network Service - Unlocked for All Carriers <br> Provider <br>
+                Operating System - OxygenOS <br>
+                Cellular Technology - 5G, 4G LTE
+
+
+            </h4>
+            <hr>
+
+            <h2>About this item</h2>
+            <p>
+            <ul>
+                <li> Camera: 108 MP Main Camera with EIS; 2MP Depth-Assist Lens and 2MP Macro Lens; Front (Selfie)
+                    Camera: 16MP <br></li>
+
+                <li> Rear Camera Mode: Hi-res 108MP mode, 3x Lossles Zoom, Photo, Video, Nightscape, Expert, Panoramic,
+                    Portrait,
+                    Macro, Time-lapse, Slow-motion, Long exposure, Dual-view video, Text Scanner, 1080p/720p@30fps,
+                    Video zoom:
+                    1080P@30fps, 720P@30fps, Slow motion: 720P@120fps, Time-Lapse: 1080P@30fps, Steady Video EIS support
+                    <br>
+                </li>
+                <li> Display: 6.72 Inches; 120 Hz Adaptive refresh rate; FHD+(1080×2400), Colors: 16.7 Million colors,
+                    391 ppi,
+                    Aspect Ratio: 20:9, Brightness: 550 nits (typical), 680 nits (HBM) <br></li>
+                <li> Operating System: Oxygen OS based on Android 13.1 <br></li>
+                <li> Processor: Qualcomm Snapdragon 695 5G <br></li>
+                <li> Battery & Charging: 5000 mAh with 67W SUPERVOOC Endurance Edition</li>
+            </ul>
+            </p>
+            <button class="button">Add to Cart</button>
+            <button class="button">Buy Now</button>
+        </div>
+    </div>
+
+    <script>
+        function clk(newImg) {
+            let getImg = document.getElementById("imgss")
+            getImg.src = newImg.src;
+        };
+
+
+        // var lens = document.getElementById("lens")
+        var first = document.getElementById("imgss")
+        // var second = document.getElementById("second")
+        var img = document.querySelector("img")
+
+        
+        first.addEventListener('mousemove', function (e) {
+
+            var x = e.clientX - e.target.offsetLeft;
+            var y = e.clientY - e.target.offsetTop;
+
+            // lens.style.left = x + 200 + 'px';
+            // lens.style.top = y + 'px';
+
+            first.style.transformOrigin = `${x}px ${y}px`;
+            first.style.transform = "scale(1.5)"
+
+        });
+
+        first.addEventListener("mouseleave", () => {
+            first.style.transformOrigin = "center";
+            first.style.transform = "scale(1)"
+        })
+    </script>
+
+</body>
+
+</html>

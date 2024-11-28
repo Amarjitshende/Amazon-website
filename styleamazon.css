@@ -1,0 +1,388 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#navbar {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+a {
+
+        text-decoration: none;
+    
+}
+
+a:hover{
+    text-decoration:underline;
+
+
+}
+.plholder {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    display: inline-block;
+    justify-content: center;
+    height: 40px;
+    width: 370px;
+    margin-left: 30px;
+    border-radius: 7px;
+
+
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+
+
+#bt1 {
+    margin-left: 50px;
+    height: 40px;
+    width: 70px;
+    background-color: rgb(232, 166, 43);
+}
+
+
+#logo img{
+   padding-left: 2px;
+   padding-right: 2px;
+   display: inline-block;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+}
+#logo img:hover{
+    border: 1px solid white;
+}
+
+
+.logo:hover {
+    border: 10px solid white;
+}
+
+.logo1 {
+    margin-top: 0%;
+    margin-left: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+   
+}
+
+.logo1:hover {
+    padding: 7px;
+    text-decoration: none;
+    border: 1px solid white;
+
+}
+
+#a1 {
+    background-color: rgb(235, 235, 223);
+    height: 330px;
+}
+
+#a1 #box1 p {
+    text-align: center;
+
+
+}
+
+
+#a1 div {
+ 
+  
+    width: 150px;
+    margin-left: 60px;
+    margin-right: 40px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+.bt{
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+    width: 120px;
+    color: black;
+    background-color: rgb(245, 241, 4);
+   height: 25px; 
+}
+.bt:hover{
+    background-color:  rgb(245, 225, 4);
+}
+
+
+.png {
+    height: 260px;
+    width: 100%;
+    background-color: rgb(235, 235, 223);
+    margin-top: 20px;
+}
+
+.foot {
+    height: 330px;
+    width: 100%;
+    color: aliceblue;
+    background-color: #1a3f3f;
+    display: flex;
+
+}
+
+footer {
+    color: white;
+    background-color: rgb(3, 33, 47);
+    height: 50px;
+    text-align: center;
+}
+ p:hover{
+    text-decoration: underline;
+}
+
+.head {
+    color: white;
+    background-color: rgb(6, 6, 6);
+    height: 50px;
+    text-align: left;
+}
+
+.boxa {
+    background-image: url("/img/red.jpg");
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.enddiv {
+
+    display: inline-block;
+    margin-left: 35px;
+    padding-left: 35px;
+}
+
+
+img:hover{
+    transform:scale(1.03);
+
+}
+.back{
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #2b4545;
+    color: white;
+}
+
+.furniture{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(235, 235, 223);
+    margin-top: 20px;
+    z-index:0;
+}
+.ftr{
+    height: 600px;
+    width: 100%;
+ 
+   
+}
+
+.quantity{
+    
+    
+    background: red;
+     border-radius: 50%;
+  
+   
+}
+
+
+/* slider container----------------------------------------- */
+
+.Slider{
+    height: 350px;
+    width: 100%;
+    
+   
+}
+.container0{
+    background-color: rgb(173, 234, 234);
+    width: 100%;
+    height: 540px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    margin-top: 4px;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(173, 234, 234);
+
+    
+    /* transition: all 0.6s ease; */
+}
+.btn0{
+
+    text-align: center;
+
+   
+}
+.btn_1{
+  
+    margin-top: 6px;
+    width: 70px;
+    height: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(56, 77, 85);
+    color: white;
+    outline: none;
+    font-size: 16px;
+    margin-inline: 9px;
+}
+
+/* ---------------------------------------------------------- */
+@media screen and (max-width:600px) {
+    #navbar {
+        height: 100px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+
+    }
+    .container0{
+        width: 100%;
+        height: 340px;
+        margin: auto;
+        margin-top: 2%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .btn_1{
+        width: 30px;
+        height: 15px;
+        border: none;
+        border-radius: 4px;
+        background-color: black;
+        color: white;
+        outline: none;
+        font-size: 25px;
+        margin-inline: 9px;
+    }
+
+    .logo1 {
+
+        display: flex;
+        margin-left: 0%;
+
+    }
+
+    a {
+
+        display: inline-block;
+
+    }
+
+    .plholder {
+        margin-left: 0px;
+        display: flex;
+        height: 20px;
+        width: 100%;
+    }
+
+    button {
+
+        display: inline-block;
+        margin-left: 70px;
+        margin-top: 5%;
+        height: 20px;
+        width: 45px;
+
+    }
+
+    .boxa {
+        background-image: url("red.jpg");
+        height: 100px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    #a1 {
+
+        background-color: rgb(197, 246, 246);
+        height: 1400px;
+    }
+
+    #a1 #box1 p {
+        text-align: center;
+
+    }
+
+    .png {
+        height: 1100px;
+        width: 100%;
+        background-color: rgb(235, 235, 223);
+        margin-top: 20px;
+    }
+
+    .enddiv {
+        height: 1600px;
+        width: 100%;
+        display: block;
+
+    }
+
+
+
+    footer {
+        color: white;
+        background-color: rgb(3, 33, 47);
+        height: 100px;
+        text-align: center;
+
+    }
+
+    .foot {
+        font-size: 3px;
+        margin-top: 0px;
+        padding-top: 0px;
+        height: 1000px;
+        width: 100%;
+        background-color: #1a3f3f;
+        display: inline-block;
+        justify-content: space-evenly;
+    }
+
+
+
+}

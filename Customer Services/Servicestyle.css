@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: rgb(252, 244, 244);
+
+    }
+    .head{
+        display: flex;
+        flex-direction: row;
+    }
+.box{
+    margin-top: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 130px;
+    width: 300px;
+    background-color:rgb(135, 185, 230);
+    /* display: inline-block; */
+    display: inline-block;
+    justify-content: center;
+    /* padding-left: 30px; */
+    padding-top: 25px;
+    
+  
+}
+.box1{
+    padding-top: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 130px;
+    width: 300px;
+    background-color:rgb(149, 195, 236);
+    display: inline-block;
+    padding-left: 30px;
+    
+}
+.service{
+    text-align: center;
+    background-color: rgb(145, 206, 206);
+    height: 500px;
+
+}
+
+header{
+    color: rgb(227, 227, 164);
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(87, 95, 95);
+}
+footer{
+    color: white;
+    background-color: rgb(3, 33, 47);
+    height: 50px;
+    text-align: center;
+   }
+   .foot{
+    height: 330px; 
+    width:1300px;
+    background-color:#1a3f3f;
+     display: flex;
+ /* font-size: 20px; */
+ list-style-type: none;
+
+   }
+
+
+   @media screen and (max-width:600px){
+    header{
+        font-size:10px;
+        color: rgb(227, 227, 164);
+        display: flex;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(87, 95, 95);
+    }
+
+    .service{
+        text-align: center;
+        background-color: rgb(145, 206, 206);
+        height: 1400px;
+    
+    }
+
+    .box1{
+        padding-top: 25px;
+        border: 2px solid black;
+        border-radius: 10px;
+        margin-top: 20px;
+        height: 130px;
+        width: 270px;
+        background-color:rgb(149, 195, 236);
+        display: inline-block;
+        padding-left: 30px;
+        
+    }
+    
+       .foot{
+
+      
+        padding-top: 0px;
+        margin-top: 0px;
+        height: 1100px; 
+        width:100%;
+        background-color:#1a3f3f;
+        display:inline-block;
+        justify-content: space-evenly;
+        
+        
+       }
+       footer{
+        color: white;
+        background-color: rgb(13, 24, 57);
+        height: 250px;
+        width: 100%;
+        text-align: center;
+        
+
+       }
+   }
